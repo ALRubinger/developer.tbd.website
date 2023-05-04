@@ -1,0 +1,66 @@
+name: Feedback from developer.tbd.website
+description: A question, issue, or statement about your experience on the Developer Site
+title: "[FEEDBACK]: "
+labels:
+  - site-feedback"
+  - triage
+assignees:
+  - EbonyLouis
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of Feedback
+      description: What type of feedback would you like to share with us today?
+      options:
+        - Docs Bug Report
+        - Site Bug Report
+        - Suggestion to Improve
+        - Positive Reinforcement
+        - Content Issue
+        - General Feedback
+        - Question
+    validations:
+      required: true
+  - type: markdown
+    id: feedback
+    attributes:
+      label: What would you like to share?
+      value: ""
+    validations:
+      required: true
+  - type: markdown
+    id: images
+    attributes:
+      label: Are there screenshots or images which help illustrate your issue?
+      value: ""
+    validations:
+      required: false
+  - type: input
+    id: url
+    attributes:
+      label: developer.tbd.website URL
+      description: What page prompted you to offer this feedback?
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+      validations:
+        required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be
+        automatically formatted into code, so no need for backticks.
+      render: shell
+      validations:
+        required: false
