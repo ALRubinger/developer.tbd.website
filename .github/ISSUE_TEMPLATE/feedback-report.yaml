@@ -9,8 +9,8 @@ assignees:
 body:
   - type: dropdown
     id: type
+    label: Type of Feedback
     attributes:
-      label: Type of Feedback
       description: What type of feedback would you like to share with us today?
       options:
         - Docs Bug Report
@@ -24,8 +24,8 @@ body:
       required: true
   - type: markdown
     id: feedback
+    label: What would you like to share?
     attributes:
-      label: What would you like to share?
       value: "Test"
     validations:
       required: true
