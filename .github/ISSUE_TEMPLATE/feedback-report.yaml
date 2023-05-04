@@ -25,7 +25,7 @@ body:
   - type: markdown
     id: feedback
     attributes:
-      description: What would you like to share?
+      label: What would you like to share?
       value: "Test"
     validations:
       required: true
