@@ -26,14 +26,14 @@ body:
     id: feedback
     attributes:
       label: What would you like to share?
-      value: ""
+      value: "Test"
     validations:
       required: true
   - type: markdown
     id: images
     attributes:
       label: Are there screenshots or images which help illustrate your issue?
-      value: ""
+      value: "Test"
     validations:
       required: false
   - type: input
